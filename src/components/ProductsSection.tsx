@@ -6,9 +6,18 @@ import olivesImage from '@/assets/product-olives.jpg';
 import datesImage from '@/assets/product-dates.jpg';
 import datesImage1 from '@/assets/product-dates-1.jpg';
 import datesImage2 from '@/assets/product-dates-2.jpg';
+import datesImage3 from '@/assets/product-dates-3.jpeg';
+import datesImage4 from '@/assets/product-dates-4.jpeg';
+import datesImage5 from '@/assets/product-dates-5.jpeg';
+import datesImage6 from '@/assets/product-dates-6.jpeg';
 import citrusImage from '@/assets/product-citrus.jpg';
 import citrusImage1 from '@/assets/product-citrus-1.jpeg';
 import citrusImage2 from '@/assets/product-citrus-2.jpeg';
+import citrusImage3 from '@/assets/product-citrus-3.jpeg';
+import citrusImage4 from '@/assets/product-citrus-4.jpeg';
+import citrusImage5 from '@/assets/product-citrus-5.jpeg';
+import citrusImage6 from '@/assets/product-citrus-6.jpeg';
+import citrusImage7 from '@/assets/product-citrus-7.jpeg';
 import grainsImage from '@/assets/product-grains.jpg';
 import almondsImage from '@/assets/product-almonds.jpg';
 import oliveOilImage from '@/assets/product-olive-oil.jpg';
@@ -17,6 +26,9 @@ import oliveOilImage2 from '@/assets/product-olive-oil-2.jpg';
 import tomatoesImage from '@/assets/product-tomatoes.jpg';
 import tomatoesImage1 from '@/assets/product-tomatoes-1.jpg';
 import tomatoesImage2 from '@/assets/product-tomatoes-2.jpg';
+import tomatoesImage3 from '@/assets/product-tomatoes-3.jpeg';
+import tomatoesImage4 from '@/assets/product-tomatoes-4.jpeg';
+import tomatoesImage5 from '@/assets/product-tomatoes-5.jpeg';
 import figsImage from '@/assets/product-figs.jpg';
 import figsImage1 from '@/assets/product-figs-1.jpg';
 import figsImage2 from '@/assets/product-figs-2.jpg';
@@ -50,7 +62,7 @@ const ProductsSection = () => {
     },
     {
       image: datesImage,
-      images: [datesImage, datesImage1, datesImage2], // Add 3 images here
+      images: [datesImage, datesImage1, datesImage2, datesImage3, datesImage4, datesImage5, datesImage6], // Add 7 images here
       title: t('products.dates.title'),
       description: t('products.dates.desc'),
       fullDescription: t('products.dates.fullDesc'),
@@ -60,7 +72,7 @@ const ProductsSection = () => {
     },
     {
       image: citrusImage,
-      images: [citrusImage, citrusImage1, citrusImage2], // Add 3 images here
+      images: [citrusImage, citrusImage1, citrusImage2, citrusImage3, citrusImage4, citrusImage5, citrusImage6, citrusImage7], // Add 8 images here
       title: t('products.citrus.title'),
       description: t('products.citrus.desc'),
       fullDescription: t('products.citrus.fullDesc'),
@@ -100,7 +112,7 @@ const ProductsSection = () => {
     },
     {
       image: tomatoesImage,
-      images: [tomatoesImage, tomatoesImage1, tomatoesImage2], // Add 3 images here
+      images: [tomatoesImage, tomatoesImage1, tomatoesImage2 ,tomatoesImage3 ,tomatoesImage4, tomatoesImage5], // Add 3 images here
       title: t('products.tomatoes.title'),
       description: t('products.tomatoes.desc'),
       fullDescription: t('products.tomatoes.fullDesc'),

@@ -50,6 +50,7 @@ const ContactSection = () => {
     {
       icon: Phone,
       label: t('contact.info.phone'),
+      type: 'phone' as const,
     },
     {
       icon: Mail,
@@ -96,7 +97,11 @@ const ContactSection = () => {
                 placeholder={t('contact.form.phone')}
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="h-11 md:h-12 bg-card border-border/50 focus:border-primary text-sm md:text-base"
+                dir="ltr"
+                className={cn(
+                  'h-11 md:h-12 bg-card border-border/50 focus:border-primary text-sm md:text-base',
+                  isRTL && 'text-left placeholder:text-right'
+                )}
               />
               <Textarea
                 placeholder={t('contact.form.message')}
@@ -137,7 +142,16 @@ const ContactSection = () => {
                       <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
                         <info.icon className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                       </div>
-                      <span className="text-foreground text-sm md:text-base">{info.label}</span>
+                      {info.type === 'phone' ? (
+                        <span
+                          dir="ltr"
+                          className={cn('text-foreground text-sm md:text-base tabular-nums', isRTL && 'text-right')}
+                        >
+                          {info.label}
+                        </span>
+                      ) : (
+                        <span className="text-foreground text-sm md:text-base">{info.label}</span>
+                      )}
                     </div>
                   </StaggerItem>
                 ))}

@@ -136,9 +136,9 @@ const translations = {
     'contact.form.message': 'Your Message',
     'contact.form.submit': 'Send Message',
     'contact.info.title': 'Contact Information',
-    'contact.info.address': '123 Export Boulevard, Business District',
+    'contact.info.address': '16, Rue 1er  Nouvembre - CHLEF 02000 -Algerie',
     'contact.info.phone': '+213 658 000 823',
-    'contact.info.email': 'contact@bmexport.com',
+    'contact.info.email': 'bmexpor02@gmail.com',
     'contact.whatsapp': 'Chat on WhatsApp',
     
     // WhatsApp
@@ -274,9 +274,9 @@ const translations = {
     'contact.form.message': 'Votre Message',
     'contact.form.submit': 'Envoyer le Message',
     'contact.info.title': 'Informations de Contact',
-    'contact.info.address': '123 Boulevard Export, Quartier des Affaires',
+    'contact.info.address': '16, Rue 1er  Nouvembre - CHLEF 02000 -Algerie',
     'contact.info.phone': '+213 658 000 823',
-    'contact.info.email': 'contact@bmexport.com',
+    'contact.info.email': 'bmexpor02@gmail.com',
     'contact.whatsapp': 'Discuter sur WhatsApp',
     
     // WhatsApp
@@ -412,9 +412,9 @@ const translations = {
     'contact.form.message': 'رسالتك',
     'contact.form.submit': 'إرسال الرسالة',
     'contact.info.title': 'معلومات الاتصال',
-    'contact.info.address': '123 شارع التصدير، حي الأعمال',
+    'contact.info.address': '16 شارع 1 نوفمبر ، الشلف 02000 - الجزائر',
     'contact.info.phone': '+213 658 000 823',
-    'contact.info.email': 'contact@bmexport.com',
+    'contact.info.email': 'bmexpor02@gmail.com',
     'contact.whatsapp': 'تحدث على واتساب',
     
     // WhatsApp
