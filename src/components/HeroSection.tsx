@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import heroImage from '@/assets/hero-bg-0.jpg';
 import heroImage1 from '@/assets/hero-bg-1.jpg';
 import heroImage2 from '@/assets/hero-bg-2.jpeg';
-const WHATSAPP_NUMBER = '+337739996582';
+const WHATSAPP_NUMBER = '+33773996582';
 const PHONE_NUMBER = '+21359300417';
 
 // Array of background images 

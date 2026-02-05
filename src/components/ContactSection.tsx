@@ -8,7 +8,7 @@ import { useToast } from '@/hooks/use-toast';
 import { cn } from '@/lib/utils';
 import { FadeIn, StaggerContainer, StaggerItem } from './ScrollAnimations';
 
-const WHATSAPP_NUMBER = '+337739996582';
+const WHATSAPP_NUMBER = '+33773996582';
 
 const ContactSection = () => {
   const { t, isRTL } = useLanguage();
