@@ -137,7 +137,7 @@ const translations = {
     'contact.form.submit': 'Send Message',
     'contact.info.title': 'Contact Information',
     'contact.info.address': '16, Rue 1er  Nouvembre - CHLEF 02000 -Algerie',
-    'contact.info.phone': '+213 658 000 823',
+    'contact.info.phone': '+213 5.59.30.04.17 /+213 7.75.12.98.71 /+213 5.62.08.59.02',
     'contact.info.email': 'bmexpor02@gmail.com',
     'contact.whatsapp': 'Chat on WhatsApp',
     
@@ -275,7 +275,7 @@ const translations = {
     'contact.form.submit': 'Envoyer le Message',
     'contact.info.title': 'Informations de Contact',
     'contact.info.address': '16, Rue 1er  Nouvembre - CHLEF 02000 -Algerie',
-    'contact.info.phone': '+213 658 000 823',
+    'contact.info.phone': '+213 5.59.30.04.17 /+213 7.75.12.98.71 /+213 5.62.08.59.02',
     'contact.info.email': 'bmexpor02@gmail.com',
     'contact.whatsapp': 'Discuter sur WhatsApp',
     
@@ -413,7 +413,7 @@ const translations = {
     'contact.form.submit': 'إرسال الرسالة',
     'contact.info.title': 'معلومات الاتصال',
     'contact.info.address': '16 شارع 1 نوفمبر ، الشلف 02000 - الجزائر',
-    'contact.info.phone': '+213 658 000 823',
+    'contact.info.phone': '+213 5.59.30.04.17 /+213 7.75.12.98.71 /+213 5.62.08.59.02',
     'contact.info.email': 'bmexpor02@gmail.com',
     'contact.whatsapp': 'تحدث على واتساب',
     
