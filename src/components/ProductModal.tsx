@@ -81,7 +81,7 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
       {/* Modal */}
       <div
         className={cn(
-          'relative bg-card rounded-t-2xl md:rounded-2xl shadow-elegant w-full h-screen md:h-auto md:max-w-3xl md:max-h-[90vh] overflow-hidden animate-scale-in',
+          'relative bg-card rounded-t-2xl md:rounded-2xl shadow-elegant w-full h-screen md:h-[600px] md:max-w-4xl overflow-hidden animate-scale-in',
           isRTL && 'text-right'
         )}
       >
@@ -98,9 +98,9 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
           <div className="w-12 h-1 bg-muted-foreground/30 rounded-full" />
         </div>
 
-        <div className="flex flex-col md:flex-row overflow-y-auto md:overflow-hidden h-full md:h-auto">
+        <div className="flex flex-col md:flex-row overflow-y-auto md:overflow-hidden h-full">
           {/* Image Carousel */}
-          <div className="md:w-1/2 flex-shrink-0 relative group h-48 md:h-full">
+          <div className="md:w-1/2 flex-shrink-0 relative group h-48 md:h-[600px]">
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentImageIndex}
