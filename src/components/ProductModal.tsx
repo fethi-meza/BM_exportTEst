@@ -35,6 +35,22 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
     setCurrentImageIndex(0);
   }, [isOpen, product]);
 
+  // Prevent body scroll when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => 
       prevIndex === productImages.length - 1 ? 0 : prevIndex + 1
@@ -65,7 +81,7 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
       {/* Modal */}
       <div
         className={cn(
-          'relative bg-card rounded-t-2xl md:rounded-2xl shadow-elegant w-full md:max-w-3xl max-h-[85vh] md:max-h-[90vh] overflow-hidden animate-scale-in',
+          'relative bg-card rounded-t-2xl md:rounded-2xl shadow-elegant w-full h-screen md:h-auto md:max-w-3xl md:max-h-[90vh] overflow-hidden animate-scale-in',
           isRTL && 'text-right'
         )}
       >
@@ -82,9 +98,9 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
           <div className="w-12 h-1 bg-muted-foreground/30 rounded-full" />
         </div>
 
-        <div className="flex flex-col md:flex-row overflow-y-auto md:overflow-hidden max-h-[80vh] md:max-h-none">
+        <div className="flex flex-col md:flex-row overflow-y-auto md:overflow-hidden h-full md:h-auto">
           {/* Image Carousel */}
-          <div className="md:w-1/2 flex-shrink-0 relative group">
+          <div className="md:w-1/2 flex-shrink-0 relative group h-48 md:h-full">
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentImageIndex}
@@ -94,7 +110,7 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
                 transition={{ duration: 0.5 }}
                 src={productImages[currentImageIndex]}
                 alt={`${product.title} - ${currentImageIndex + 1}`}
-                className="w-full h-48 md:h-full object-cover"
+                className="w-full h-full object-cover"
               />
             </AnimatePresence>
             
@@ -130,7 +146,7 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
           </div>
 
           {/* Content */}
-          <div className="md:w-1/2 p-4 md:p-8 overflow-y-auto md:max-h-[80vh]">
+          <div className="md:w-1/2 p-4 md:p-8 overflow-y-auto flex-1">
             <h3 className="font-display text-xl md:text-3xl font-bold text-foreground mb-2 md:mb-3">
               {product.title}
             </h3>
