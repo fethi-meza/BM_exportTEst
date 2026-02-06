@@ -1,10 +1,11 @@
 import { MessageCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-const WHATSAPP_NUMBER = '+33773996582';
-
 const WhatsAppButton = () => {
-  const { t, isRTL } = useLanguage();
+  const { t, isRTL, language } = useLanguage();
+
+  // Set WhatsApp number based on language
+  const WHATSAPP_NUMBER = language === 'ar' ? '+2136580000823' : '+33773996582';
 
   const getWhatsAppUrl = () => {
     const message = encodeURIComponent(t('whatsapp.message'));

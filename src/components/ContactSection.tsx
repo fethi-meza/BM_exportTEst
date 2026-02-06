@@ -8,10 +8,8 @@ import { useToast } from '@/hooks/use-toast';
 import { cn } from '@/lib/utils';
 import { FadeIn, StaggerContainer, StaggerItem } from './ScrollAnimations';
 
-const WHATSAPP_NUMBER = '+33773996582';
-
 const ContactSection = () => {
-  const { t, isRTL } = useLanguage();
+  const { t, isRTL, language } = useLanguage();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
@@ -20,6 +18,9 @@ const ContactSection = () => {
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Set WhatsApp number based on language
+  const WHATSAPP_NUMBER = language === 'ar' ? '+2136580000823' : '+33773996582';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

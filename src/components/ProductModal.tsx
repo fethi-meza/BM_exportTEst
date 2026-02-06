@@ -23,7 +23,7 @@ interface ProductModalProps {
 }
 
 const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
-  const { t, isRTL } = useLanguage();
+  const { t, isRTL, language } = useLanguage();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Create images array (use provided images or fallback to single image repeated 3 times)
@@ -65,10 +65,13 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
 
   if (!isOpen || !product) return null;
 
+  // Set WhatsApp number based on language
+  const WHATSAPP_NUMBER = language === 'ar' ? '+2136580000823' : '+33773996582';
+
   const whatsappMessage = encodeURIComponent(
     `${t('whatsapp.message')} - ${product.title}`
   );
-  const whatsappLink = `https://wa.me/213658000823?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center p-0 md:p-4">
