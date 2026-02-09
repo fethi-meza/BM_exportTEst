@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   const { t, isRTL, language } = useLanguage();
 
   // Set WhatsApp number based on language
-  const WHATSAPP_NUMBER = language === 'ar' ? '+2136580000823' : '+33773996582';
+  const WHATSAPP_NUMBER = language === 'ar' ? '+213 559300417' : '+33773996582';
 
   const getWhatsAppUrl = () => {
     const message = encodeURIComponent(t('whatsapp.message'));
