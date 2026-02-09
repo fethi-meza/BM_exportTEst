@@ -7,7 +7,7 @@ import heroImage from '@/assets/hero-bg-0.jpg';
 import heroImage1 from '@/assets/hero-bg-1.jpg';
 import heroImage2 from '@/assets/hero-bg-2.jpeg';
 
-const PHONE_NUMBER = '+21359300417';
+const PHONE_NUMBER = '+213559300417';
 
 // Array of background images 
 const backgroundImages = [
@@ -21,7 +21,7 @@ const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Set WhatsApp number based on language
-  const WHATSAPP_NUMBER = language === 'ar' ? '+213 59300417' : '+337 73996582';
+  const WHATSAPP_NUMBER = language === 'ar' ? '+213559300417' : '+33773996582';
 
   // Auto-scroll images every 2.5 seconds
   useEffect(() => {
