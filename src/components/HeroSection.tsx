@@ -21,7 +21,7 @@ const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Set WhatsApp number based on language
-  const WHATSAPP_NUMBER = language === 'ar' ? '+21359300417' : '+33773996582';
+  const WHATSAPP_NUMBER = language === 'ar' ? '+213 59300417' : '+337 73996582';
 
   // Auto-scroll images every 2.5 seconds
   useEffect(() => {
