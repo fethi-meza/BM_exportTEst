@@ -50,6 +50,7 @@ interface ProductCategory {
   id: string;
   name: string;
   description: string;
+  image?: string; // Optional: specific image for category
   products: Product[];
 }
 
@@ -193,6 +194,26 @@ const ProductsSection = () => {
       description: 'Natural and nutritious fruits',
       products: productsList.filter(p => p.category === 'fruits'),
     },
+    ,
+    {
+      id: 'fruits',
+      name: 'Fresh Fruits',
+      description: 'Natural and nutritious fruits',
+      products: productsList.filter(p => p.category === 'fruits'),
+    }
+    ,
+    {
+      id: 'fruits',
+      name: 'Fresh Fruits',
+      description: 'Natural and nutritious fruits',
+      products: productsList.filter(p => p.category === 'fruits'),
+    },
+    {
+      id: 'fruits',
+      name: 'Fresh Fruits',
+      description: 'Natural and nutritious fruits',
+      products: productsList.filter(p => p.category === 'fruits'),
+    }
   ];
 
   return (
@@ -236,7 +257,7 @@ const ProductsSection = () => {
                     {/* Category Image (use first product image) */}
                     <div className="aspect-square overflow-hidden">
                       <img
-                        src={category.products[0]?.image || ''}
+                        src={category.image || category.products[0]?.image || ''}
                         alt={category.name}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
