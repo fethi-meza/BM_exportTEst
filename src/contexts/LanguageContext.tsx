@@ -127,6 +127,22 @@ const translations = {
     'products.figs.packaging': 'Fresh: ventilated containers; Dried: vacuum-sealed or boxes',
     'products.figs.availability': 'Fresh (August-October), Dried (year-round)',
     
+    // Categories
+    'category.olives': 'Olives & Olive Products',
+    'category.olives.desc': 'Premium olives and traditional olive oil',
+    'category.dates': 'Premium Dates',
+    'category.dates.desc': 'Natural and delicious dates',
+    'category.citrus': 'Fresh Citrus',
+    'category.citrus.desc': 'Fresh and juicy citrus fruits',
+    'category.nuts': 'Premium Nuts',
+    'category.nuts.desc': 'High-quality nuts and almonds',
+    'category.grains': 'Grains & Cereals',
+    'category.grains.desc': 'Quality grains and cereals',
+    'category.vegetables': 'Fresh Vegetables',
+    'category.vegetables.desc': 'Fresh and organic vegetables',
+    'category.fruits': 'Fresh Fruits',
+    'category.fruits.desc': 'Natural and nutritious fruits',
+    
     // Contact
     'contact.title': 'Contact Us',
     'contact.subtitle': 'Get in Touch',
@@ -265,6 +281,22 @@ const translations = {
     'products.figs.packaging': 'Fraîches: conteneurs ventilés; Séchées: sous vide ou boîtes',
     'products.figs.availability': 'Fraîches (Août-Octobre), Séchées (toute l\'année)',
     
+    // Categories
+    'category.olives': 'Olives & Produits Olive',
+    'category.olives.desc': 'Olives premium et l\'huile d\'olive traditionnelle',
+    'category.dates': 'Dattes Premium',
+    'category.dates.desc': 'Dattes naturelles et délicieuses',
+    'category.citrus': 'Agrumes Frais',
+    'category.citrus.desc': 'Agrumes frais et succulents',
+    'category.nuts': 'Noix Premium',
+    'category.nuts.desc': 'Noix et amandes de haute qualité',
+    'category.grains': 'Céréales & Grains',
+    'category.grains.desc': 'Céréales et grains de qualité',
+    'category.vegetables': 'Légumes Frais',
+    'category.vegetables.desc': 'Légumes frais et biologiques',
+    'category.fruits': 'Fruits Frais',
+    'category.fruits.desc': 'Fruits naturels et nutritifs',
+    
     // Contact
     'contact.title': 'Contactez-nous',
     'contact.subtitle': 'Prenez Contact',
@@ -402,6 +434,22 @@ const translations = {
     'products.figs.origin': 'تونس وتركيا',
     'products.figs.packaging': 'طازج: حاويات مهواة؛ مجفف: مفرغ من الهواء أو علب',
     'products.figs.availability': 'طازج (أغسطس-أكتوبر)، مجفف (على مدار السنة)',
+    
+    // Categories
+    'category.olives': 'الزيتون ومنتجاته',
+    'category.olives.desc': 'زيتون ممتاز وزيت زيتون تقليدي',
+    'category.dates': 'التمور الممتازة',
+    'category.dates.desc': 'تمور طبيعية وشهية',
+    'category.citrus': 'حمضيات طازجة',
+    'category.citrus.desc': 'حمضيات طازجة وعصيرية',
+    'category.nuts': 'المكسرات الممتازة',
+    'category.nuts.desc': 'مكسرات وجوز عالي الجودة',
+    'category.grains': 'الحبوب والحبوب الكاملة',
+    'category.grains.desc': 'حبوب وحبوب عالية الجودة',
+    'category.vegetables': 'الخضروات الطازجة',
+    'category.vegetables.desc': 'خضروات طازجة وعضوية',
+    'category.fruits': 'الفواكه الطازجة',
+    'category.fruits.desc': 'فواكه طبيعية وغذائية',
     
     // Contact
     'contact.title': 'اتصل بنا',

@@ -154,44 +154,44 @@ const ProductsSection = () => {
   const categories: ProductCategory[] = [
     {
       id: 'olives',
-      name: 'Olives & Olive Products',
-      description: 'Premium olives and traditional olive oil',
+      name: t('category.olives'),
+      description: t('category.olives.desc'),
       products: productsList.filter(p => p.category === 'olives'),
     },
     {
       id: 'dates',
-      name: 'Premium Dates',
-      description: 'Natural and delicious dates',
+      name: t('category.dates'),
+      description: t('category.dates.desc'),
       products: productsList.filter(p => p.category === 'dates'),
     },
     {
       id: 'citrus',
-      name: 'Fresh Citrus',
-      description: 'Fresh and juicy citrus fruits',
+      name: t('category.citrus'),
+      description: t('category.citrus.desc'),
       products: productsList.filter(p => p.category === 'citrus'),
     },
     {
       id: 'nuts',
-      name: 'Premium Nuts',
-      description: 'High-quality nuts and almonds',
+      name: t('category.nuts'),
+      description: t('category.nuts.desc'),
       products: productsList.filter(p => p.category === 'nuts'),
     },
     {
       id: 'grains',
-      name: 'Grains & Cereals',
-      description: 'Quality grains and cereals',
+      name: t('category.grains'),
+      description: t('category.grains.desc'),
       products: productsList.filter(p => p.category === 'grains'),
     },
     {
       id: 'vegetables',
-      name: 'Fresh Vegetables',
-      description: 'Fresh and organic vegetables',
+      name: t('category.vegetables'),
+      description: t('category.vegetables.desc'),
       products: productsList.filter(p => p.category === 'vegetables'),
     },
     {
       id: 'fruits',
-      name: 'Fresh Fruits',
-      description: 'Natural and nutritious fruits',
+      name: t('category.fruits'),
+      description: t('category.fruits.desc'),
       products: productsList.filter(p => p.category === 'fruits'),
     }
   ];
