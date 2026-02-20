@@ -193,26 +193,6 @@ const ProductsSection = () => {
       name: 'Fresh Fruits',
       description: 'Natural and nutritious fruits',
       products: productsList.filter(p => p.category === 'fruits'),
-    },
-    ,
-    {
-      id: 'fruits',
-      name: 'Fresh Fruits',
-      description: 'Natural and nutritious fruits',
-      products: productsList.filter(p => p.category === 'fruits'),
-    }
-    ,
-    {
-      id: 'fruits',
-      name: 'Fresh Fruits',
-      description: 'Natural and nutritious fruits',
-      products: productsList.filter(p => p.category === 'fruits'),
-    },
-    {
-      id: 'fruits',
-      name: 'Fresh Fruits',
-      description: 'Natural and nutritious fruits',
-      products: productsList.filter(p => p.category === 'fruits'),
     }
   ];
 
