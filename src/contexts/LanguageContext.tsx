@@ -1222,7 +1222,12 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   }, [language, isRTL]);
 
   const t = (key: string): string => {
-    return translations[language][key as keyof typeof translations['en']] || key;
+    const translated = translations[language][key as keyof typeof translations['en']];
+    if (translated) {
+      return translated;
+    }
+
+    return translations.en[key as keyof typeof translations['en']] || key;
   };
 
   return (
