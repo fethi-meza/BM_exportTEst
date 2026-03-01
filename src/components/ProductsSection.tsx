@@ -7,6 +7,45 @@ import datesImage from '@/assets/product-dates.jpg';
 import datesImage1 from '@/assets/product-dates-1.jpg';
 import datesImage2 from '@/assets/product-dates-2.jpg';
 import datesImage3 from '@/assets/product-dates-3.jpeg';
+import degletNourDatesImage1 from '@/assets/Deglet-Nour -Dates-1.jpg';
+import degletNourDatesImage2 from '@/assets/Deglet-Nour -Dates-2.jpg';
+import degletNourDatesImage3 from '@/assets/Deglet-Nour -Dates-3.jpg';
+import gharsDatesImage1 from '@/assets/Ghars-Dates-1.jpg';
+import gharsDatesImage2 from '@/assets/Ghars-Dates-2.jpg';
+import dateSyrupImage1 from '@/assets/Date-Syrup-1.jpg';
+import dateSyrupImage2 from '@/assets/Date-Syrup-2.jpg';
+import datePasteImage1 from '@/assets/Date-Paste-1.jpg';
+import dateSugarImage1 from '@/assets/Date-Sugar-1.jpg';
+import dateSugarImage2 from '@/assets/Date-Sugar-2.jpg';
+import dateVinegarImage1 from '@/assets/Date-Vinegar-1.jpg';
+import dateVinegarImage2 from '@/assets/Date-Vinegar-2.jpg';
+import dateCoffeeImage1 from '@/assets/Date-Coffee-1.jpg';
+import stuffedDatesWithNutsImage1 from '@/assets/Stuffed-Dates-withNuts-1.jpg';
+import stuffedDatesWithNutsImage2 from '@/assets/Stuffed-Dates-withNuts-2.jpg';
+import stuffedDatesWithNutsImage3 from '@/assets/Stuffed-Dates-withNuts-3.jpg';
+import juicesImage1 from '@/assets/Juices-1.jpg';
+import juicesImage2 from '@/assets/Juices-2.jpg';
+import juicesImage3 from '@/assets/Juices-3.jpg';
+import sweetsAndPastriesImage1 from '@/assets/Sweets-and-pastries-1.jpg';
+import sweetsAndPastriesImage2 from '@/assets/Sweets-and-pastries-2.jpg';
+import chocolateImage1 from '@/assets/Chocolate-1.jpg';
+import chocolateImage2 from '@/assets/Chocolate-2.jpg';
+import chocolateImage3 from '@/assets/Chocolate-3.jpg';
+import bakingImage1 from '@/assets/Baking-1.jpg';
+import bakingImage2 from '@/assets/Baking-2.jpg';
+import potatoImage1 from '@/assets/Potato-1.jpg';
+import potatoImage2 from '@/assets/Potato-2.jpg';
+import onionImage1 from '@/assets/Onion-1.jpg';
+import onionImage2 from '@/assets/Onion-2.jpeg';
+import onionImage3 from '@/assets/Onion-3.jpg';
+import broccoliImage1 from '@/assets/Broccoli-1.jpg';
+import broccoliImage2 from '@/assets/Broccoli-2.jpg';
+import carrotImage1 from '@/assets/Carrot-1.JPG';
+import carrotImage2 from '@/assets/Carrot-2.jpg';
+import cauliflowerImage1 from '@/assets/Cauliflower-1.jpg';
+import cauliflowerImage2 from '@/assets/Cauliflower-2.jpg';
+import eggplantImage1 from '@/assets/Eggplant-1.jpeg';
+import eggplantImage2 from '@/assets/Eggplant-2.jpg';
 import datesImage4 from '@/assets/product-dates-4.jpeg';
 import datesImage5 from '@/assets/product-dates-5.jpeg';
 import datesImage6 from '@/assets/product-dates-6.jpeg';
@@ -23,6 +62,11 @@ import almondsImage from '@/assets/product-almonds.jpg';
 import oliveOilImage from '@/assets/product-olive-oil.jpg';
 import oliveOilImage1 from '@/assets/product-olive-oil-1.jpg';
 import oliveOilImage2 from '@/assets/product-olive-oil-2.jpg';
+import oliveOilImage3 from '@/assets/Oil-1.jpg';
+import oliveOilImage4 from '@/assets/Oil-3.jpg';
+import greenOlivesImage1 from '@/assets/greenOlivesImage1.jpg';
+import greenOlivesImage2 from '@/assets/greenOlivesImage2.jpg';
+import blackOlivesImage1 from '@/assets/blackOlivesImage1.jpg';
 import tomatoesImage from '@/assets/product-tomatoes.jpg';
 import tomatoesImage1 from '@/assets/product-tomatoes-1.jpg';
 import tomatoesImage2 from '@/assets/product-tomatoes-2.jpg';
@@ -62,7 +106,7 @@ const ProductsSection = () => {
   const productsList: Product[] = [
     {
       image: olivesImage,
-      images: [olivesImage, olivesImage, olivesImage], // Add 3 images here
+      images: [olivesImage], //ziton 1 prudect image
       title: t('products.olives.title'),
       description: t('products.olives.desc'),
       fullDescription: t('products.olives.fullDesc'),
@@ -72,8 +116,8 @@ const ProductsSection = () => {
       category: 'olives',
     },
     {
-      image: datesImage,
-      images: [datesImage, datesImage1, datesImage2, datesImage3, datesImage4, datesImage5, datesImage6], // Add 7 images here
+      image: degletNourDatesImage1,
+      images: [degletNourDatesImage1, degletNourDatesImage2, degletNourDatesImage3],// daglat nor dates 3 images
       title: t('products.dates.title'),
       description: t('products.dates.desc'),
       fullDescription: t('products.dates.fullDesc'),
@@ -83,8 +127,8 @@ const ProductsSection = () => {
       category: 'dates',
     },
     {
-      image: datesImage1,
-      images: [datesImage1, datesImage2, datesImage3],
+      image: gharsDatesImage1,
+      images: [gharsDatesImage1], // ghars dates 2 images
       title: t('products.gharsDates.title'),
       description: t('products.gharsDates.desc'),
       fullDescription: t('products.gharsDates.fullDesc'),
@@ -94,8 +138,8 @@ const ProductsSection = () => {
       category: 'dates',
     },
     {
-      image: datesImage2,
-      images: [datesImage2, datesImage3, datesImage4],
+      image: dateSyrupImage1,
+      images: [dateSyrupImage1],// dbs tamr 2 images
       title: t('products.dateSyrup.title'),
       description: t('products.dateSyrup.desc'),
       fullDescription: t('products.dateSyrup.fullDesc'),
@@ -105,8 +149,8 @@ const ProductsSection = () => {
       category: 'dates',
     },
     {
-      image: datesImage3,
-      images: [datesImage3, datesImage4, datesImage5],
+      image: datePasteImage1,
+      images: [datePasteImage1], // 3ajinat tamr 
       title: t('products.datePaste.title'),
       description: t('products.datePaste.desc'),
       fullDescription: t('products.datePaste.fullDesc'),
@@ -116,8 +160,8 @@ const ProductsSection = () => {
       category: 'dates',
     },
     {
-      image: datesImage4,
-      images: [datesImage4, datesImage5, datesImage6],
+      image: dateSugarImage1,
+      images: [dateSugarImage1, dateSugarImage2], // souker tamr 2 images
       title: t('products.dateSugar.title'),
       description: t('products.dateSugar.desc'),
       fullDescription: t('products.dateSugar.fullDesc'),
@@ -127,8 +171,8 @@ const ProductsSection = () => {
       category: 'dates',
     },
     {
-      image: datesImage5,
-      images: [datesImage5, datesImage6, datesImage],
+      image: dateVinegarImage1,
+      images: [dateVinegarImage1, dateVinegarImage2], // kal tamr 2 images
       title: t('products.dateVinegar.title'),
       description: t('products.dateVinegar.desc'),
       fullDescription: t('products.dateVinegar.fullDesc'),
@@ -138,8 +182,8 @@ const ProductsSection = () => {
       category: 'dates',
     },
     {
-      image: datesImage6,
-      images: [datesImage6, datesImage, datesImage1],
+      image: dateCoffeeImage1,
+      images: [dateCoffeeImage1], // qahwat tamr 1 image
       title: t('products.dateCoffee.title'),
       description: t('products.dateCoffee.desc'),
       fullDescription: t('products.dateCoffee.fullDesc'),
@@ -149,8 +193,8 @@ const ProductsSection = () => {
       category: 'dates',
     },
     {
-      image: datesImage,
-      images: [datesImage, datesImage2, datesImage5],
+      image: stuffedDatesWithNutsImage1,
+      images: [stuffedDatesWithNutsImage1, stuffedDatesWithNutsImage2, stuffedDatesWithNutsImage3], // mokasart tamr  3 images
       title: t('products.stuffedDates.title'),
       description: t('products.stuffedDates.desc'),
       fullDescription: t('products.stuffedDates.fullDesc'),
@@ -171,8 +215,8 @@ const ProductsSection = () => {
       category: 'citrus',
     },
     {
-      image: grainsImage,
-      images: [grainsImage, grainsImage, grainsImage], // Add 3 images here
+      image: juicesImage1,
+      images: [juicesImage1, juicesImage2, juicesImage3], // jus slim 3 images
       title: t('products.foodJuices.title'),
       description: t('products.foodJuices.desc'),
       fullDescription: t('products.foodJuices.fullDesc'),
@@ -182,8 +226,8 @@ const ProductsSection = () => {
       category: 'food',
     },
     {
-      image: grainsImage,
-      images: [grainsImage, grainsImage, grainsImage],
+      image: sweetsAndPastriesImage1,
+      images: [sweetsAndPastriesImage1, sweetsAndPastriesImage2], // halawiyat wa maamoul 2 images
       title: t('products.foodSweets.title'),
       description: t('products.foodSweets.desc'),
       fullDescription: t('products.foodSweets.fullDesc'),
@@ -193,8 +237,8 @@ const ProductsSection = () => {
       category: 'food',
     },
     {
-      image: grainsImage,
-      images: [grainsImage, grainsImage, grainsImage],
+      image: chocolateImage1,
+      images: [chocolateImage1, chocolateImage2, chocolateImage3], // chokola 3 images
       title: t('products.foodChocolate.title'),
       description: t('products.foodChocolate.desc'),
       fullDescription: t('products.foodChocolate.fullDesc'),
@@ -204,8 +248,8 @@ const ProductsSection = () => {
       category: 'food',
     },
     {
-      image: grainsImage,
-      images: [grainsImage, grainsImage, grainsImage],
+      image: bakingImage1,
+      images: [bakingImage1, bakingImage2],// maida wa khobz 2 images
       title: t('products.foodBaking.title'),
       description: t('products.foodBaking.desc'),
       fullDescription: t('products.foodBaking.fullDesc'),
@@ -226,8 +270,8 @@ const ProductsSection = () => {
       category: 'nuts',
     },
     {
-      image: oliveOilImage,
-      images: [oliveOilImage, oliveOilImage1, oliveOilImage2], // Add 3 images here
+      image: oliveOilImage4,
+      images: [oliveOilImage4, oliveOilImage, oliveOilImage1, oliveOilImage2, oliveOilImage3],
       title: t('products.oliveOil.title'),
       description: t('products.oliveOil.desc'),
       fullDescription: t('products.oliveOil.fullDesc'),
@@ -237,8 +281,8 @@ const ProductsSection = () => {
       category: 'olives',
     },
     {
-      image: olivesImage,
-      images: [olivesImage, oliveOilImage1, olivesImage],
+      image: greenOlivesImage1,
+      images: [greenOlivesImage1,greenOlivesImage2],//ziton akdar 
       title: t('products.greenOlivesPitted.title'),
       description: t('products.greenOlivesPitted.desc'),
       fullDescription: t('products.greenOlivesPitted.fullDesc'),
@@ -248,8 +292,8 @@ const ProductsSection = () => {
       category: 'olives',
     },
     {
-      image: olivesImage,
-      images: [olivesImage, oliveOilImage2, olivesImage],
+      image: blackOlivesImage1,
+      images: [blackOlivesImage1], //ziton ak7al
       title: t('products.blackOlivesWithPit.title'),
       description: t('products.blackOlivesWithPit.desc'),
       fullDescription: t('products.blackOlivesWithPit.fullDesc'),
@@ -270,8 +314,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage2,
-      images: [tomatoesImage2, tomatoesImage1, tomatoesImage3],
+      image: potatoImage1,
+      images: [potatoImage1, potatoImage2], //batata 2 images
       title: t('products.potato.title'),
       description: t('products.potato.desc'),
       fullDescription: t('products.potato.fullDesc'),
@@ -281,8 +325,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage3,
-      images: [tomatoesImage3, tomatoesImage2, tomatoesImage4],
+      image: onionImage1,
+      images: [onionImage1, onionImage2, onionImage3], // basal 2 images
       title: t('products.onion.title'),
       description: t('products.onion.desc'),
       fullDescription: t('products.onion.fullDesc'),
@@ -292,8 +336,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage4,
-      images: [tomatoesImage4, tomatoesImage3, tomatoesImage5],
+      image: broccoliImage1,
+      images: [broccoliImage1, broccoliImage2], // brokoli 2 images
       title: t('products.broccoli.title'),
       description: t('products.broccoli.desc'),
       fullDescription: t('products.broccoli.fullDesc'),
@@ -303,8 +347,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage5,
-      images: [tomatoesImage5, tomatoesImage4, tomatoesImage3],
+      image: carrotImage1,
+      images: [carrotImage1, carrotImage2], // jazar 2 images
       title: t('products.carrot.title'),
       description: t('products.carrot.desc'),
       fullDescription: t('products.carrot.fullDesc'),
@@ -314,8 +358,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage1,
-      images: [tomatoesImage1, tomatoesImage2, tomatoesImage3],
+      image: cauliflowerImage1,
+      images: [cauliflowerImage1, cauliflowerImage2], //chouflor 2 images
       title: t('products.cauliflower.title'),
       description: t('products.cauliflower.desc'),
       fullDescription: t('products.cauliflower.fullDesc'),
@@ -325,8 +369,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage2,
-      images: [tomatoesImage2, tomatoesImage3, tomatoesImage4],
+      image: eggplantImage1,
+      images: [eggplantImage1], // badinjan 2 images
       title: t('products.eggplant.title'),
       description: t('products.eggplant.desc'),
       fullDescription: t('products.eggplant.fullDesc'),
