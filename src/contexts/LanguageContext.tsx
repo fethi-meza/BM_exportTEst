@@ -35,6 +35,10 @@ const translations = {
     'about.quality.desc': 'Rigorous quality control ensuring only the finest products',
     'about.global.title': 'Global Reach',
     'about.global.desc': 'Established partnerships across continents',
+    'about.stats.yearsExperience': 'Years Experience',
+    'about.stats.countriesServed': 'Countries Served',
+    'about.stats.happyClients': 'Happy Clients',
+    'about.stats.qualityAssured': 'Quality Assured',
     
     // Services
     'services.title': 'Our Services',
@@ -65,6 +69,8 @@ const translations = {
     'products.subtitle': 'Premium Agricultural Exports',
     'products.viewDetails': 'Click on any product to view details',
     'products.clickDetails': 'Click for details',
+    'products.backToCategories': 'Back to Categories',
+    'products.itemsLabel': 'products',
     'products.modal.origin': 'Origin',
     'products.modal.packaging': 'Packaging',
     'products.modal.availability': 'Availability',
@@ -399,7 +405,7 @@ const translations = {
     'contact.info.title': 'Contact Information',
     'contact.info.address': '16, Rue 1er  Nouvembre - CHLEF 02000 -Algerie',
     'contact.info.phone': '+213 5.59.30.04.17 /+213 7.75.12.98.71 /+213 5.62.08.59.02',
-    'contact.info.email': 'bmexpor02@gmail.com',
+    'contact.info.email': 'bassatine.metidja.export@gmail.com',
     'contact.whatsapp': 'Chat on WhatsApp',
     
     // WhatsApp
@@ -434,6 +440,10 @@ const translations = {
     'about.quality.desc': 'Contrôle qualité rigoureux garantissant uniquement les meilleurs produits',
     'about.global.title': 'Portée Mondiale',
     'about.global.desc': 'Partenariats établis sur tous les continents',
+    'about.stats.yearsExperience': 'Années d\'expérience',
+    'about.stats.countriesServed': 'Pays desservis',
+    'about.stats.happyClients': 'Clients satisfaits',
+    'about.stats.qualityAssured': 'Qualité garantie',
     
     // Services
     'services.title': 'Nos Services',
@@ -464,6 +474,8 @@ const translations = {
     'products.subtitle': 'Exports Agricoles Premium',
     'products.viewDetails': 'Cliquez sur un produit pour voir les détails',
     'products.clickDetails': 'Voir les détails',
+    'products.backToCategories': 'Retour aux catégories',
+    'products.itemsLabel': 'produits',
     'products.modal.origin': 'Origine',
     'products.modal.packaging': 'Emballage',
     'products.modal.availability': 'Disponibilité',
@@ -798,7 +810,7 @@ const translations = {
     'contact.info.title': 'Informations de Contact',
     'contact.info.address': '16, Rue 1er  Nouvembre - CHLEF 02000 -Algerie',
     'contact.info.phone': '+213 5.59.30.04.17 /+213 7.75.12.98.71 /+213 5.62.08.59.02',
-    'contact.info.email': 'bmexpor02@gmail.com',
+    'contact.info.email': 'bassatine.metidja.export@gmail.com',
     'contact.whatsapp': 'Discuter sur WhatsApp',
     
     // WhatsApp
@@ -833,6 +845,10 @@ const translations = {
     'about.quality.desc': 'رقابة صارمة على الجودة تضمن أفضل المنتجات فقط',
     'about.global.title': 'انتشار عالمي',
     'about.global.desc': 'شراكات راسخة عبر القارات',
+    'about.stats.yearsExperience': 'سنوات الخبرة',
+    'about.stats.countriesServed': 'الدول المخدومة',
+    'about.stats.happyClients': 'عملاء سعداء',
+    'about.stats.qualityAssured': 'جودة مضمونة',
     
     // Services
     'services.title': 'خدماتنا',
@@ -863,6 +879,8 @@ const translations = {
     'products.subtitle': 'صادرات زراعية ممتازة',
     'products.viewDetails': 'انقر على أي منتج لعرض التفاصيل',
     'products.clickDetails': 'انقر للتفاصيل',
+    'products.backToCategories': 'العودة إلى الفئات',
+    'products.itemsLabel': 'منتج',
     'products.modal.origin': 'المنشأ',
     'products.modal.packaging': 'التعبئة',
     'products.modal.availability': 'التوفر',
@@ -1197,7 +1215,7 @@ const translations = {
     'contact.info.title': 'معلومات الاتصال',
     'contact.info.address': '16 شارع 1 نوفمبر ، الشلف 02000 - الجزائر',
     'contact.info.phone': '+213 5.59.30.04.17 /+213 7.75.12.98.71 /+213 5.62.08.59.02',
-    'contact.info.email': 'bmexpor02@gmail.com',
+    'contact.info.email': 'bassatine.metidja.export@gmail.com',
     'contact.whatsapp': 'تحدث على واتساب',
     
     // WhatsApp

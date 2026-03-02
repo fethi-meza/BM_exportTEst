@@ -76,25 +76,25 @@ const AboutSection = () => {
                 <StaggerItem>
                   <div className="p-5 md:p-8 bg-card rounded-xl md:rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 h-full flex flex-col justify-center items-center text-center">
                     <div className="text-3xl md:text-5xl font-display font-bold text-primary mb-2 md:mb-3">15+</div>
-                    <div className="text-muted-foreground text-sm md:text-base font-medium">Years Experience</div>
+                    <div className="text-muted-foreground text-sm md:text-base font-medium">{t('about.stats.yearsExperience')}</div>
                   </div>
                 </StaggerItem>
                 <StaggerItem>
                   <div className="p-5 md:p-8 bg-primary rounded-xl md:rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 h-full flex flex-col justify-center items-center text-center">
                     <div className="text-3xl md:text-5xl font-display font-bold text-primary-foreground mb-2 md:mb-3">50+</div>
-                    <div className="text-primary-foreground/90 text-sm md:text-base font-medium">Countries Served</div>
+                    <div className="text-primary-foreground/90 text-sm md:text-base font-medium">{t('about.stats.countriesServed')}</div>
                   </div>
                 </StaggerItem>
                 <StaggerItem>
                   <div className="p-5 md:p-8 bg-secondary rounded-xl md:rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 h-full flex flex-col justify-center items-center text-center">
                     <div className="text-3xl md:text-5xl font-display font-bold text-secondary-foreground mb-2 md:mb-3">1000+</div>
-                    <div className="text-secondary-foreground/90 text-sm md:text-base font-medium">Happy Clients</div>
+                    <div className="text-secondary-foreground/90 text-sm md:text-base font-medium">{t('about.stats.happyClients')}</div>
                   </div>
                 </StaggerItem>
                 <StaggerItem>
                   <div className="p-5 md:p-8 bg-accent rounded-xl md:rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 h-full flex flex-col justify-center items-center text-center">
                     <div className="text-3xl md:text-5xl font-display font-bold text-accent-foreground mb-2 md:mb-3">100%</div>
-                    <div className="text-accent-foreground/90 text-sm md:text-base font-medium">Quality Assured</div>
+                    <div className="text-accent-foreground/90 text-sm md:text-base font-medium">{t('about.stats.qualityAssured')}</div>
                   </div>
                 </StaggerItem>
               </StaggerContainer>

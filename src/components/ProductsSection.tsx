@@ -46,6 +46,41 @@ import cauliflowerImage1 from '@/assets/Cauliflower-1.jpg';
 import cauliflowerImage2 from '@/assets/Cauliflower-2.jpg';
 import eggplantImage1 from '@/assets/Eggplant-1.jpeg';
 import eggplantImage2 from '@/assets/Eggplant-2.jpg';
+import peasImage1 from '@/assets/Peas-1.jpg';
+import greenBeansImage1 from '@/assets/Green-Beans-1.jpg';
+import greenBeansImage2 from '@/assets/Green-Beans-2.jpg';
+import favaBeansImage1 from '@/assets/Fava-Beans-1.jpg';
+import favaBeansImage2 from '@/assets/Fava-Beans-2.jpg';
+import cucumberImage1 from '@/assets/Cucumber-1.jpg';
+import cucumberImage2 from '@/assets/Cucumber-2.jpg';
+import zucchiniImage1 from '@/assets/Zucchini-1.jpg';
+import zucchiniImage2 from '@/assets/Zucchini-2.jpeg';
+import zucchiniImage3 from '@/assets/Zucchini-3.jpg';
+import pumpkinImage1 from '@/assets/Pumpkin-1.jpg';
+import pumpkinImage2 from '@/assets/Pumpkin-2.jpg';
+import artichokeImage1 from '@/assets/Artichoke-1.jpg';
+import artichokeImage2 from '@/assets/Artichoke-2.jpg';
+import grapesImage1 from '@/assets/Grapes-1.jpg';
+import grapesImage2 from '@/assets/Grapes-2.jpg';
+import grapesImage3 from '@/assets/Grapes-3.jpg';
+import grapesImage4 from '@/assets/Grapes-4.jpg';
+import watermelonImage1 from '@/assets/Watermelon-1.jpg';
+import watermelonImage2 from '@/assets/Watermelon-2.jpg';
+import peachImage1 from '@/assets/Peach-1.jpg';
+import peachImage2 from '@/assets/Peach-2.jpg';
+import peachImage3 from '@/assets/Peach-3.jpg';
+import peachImage4 from '@/assets/Peach-4.jpg';
+import strawberryImage1 from '@/assets/Strawberry-1.jpg';
+import strawberryImage2 from '@/assets/Strawberry-2.jpg';
+import strawberryImage3 from '@/assets/Strawberry-3.jpg';
+import pomegranateImage1 from '@/assets/Pomegranate-1.jpg';
+import pomegranateImage2 from '@/assets/Pomegranate-2.jpg';
+import pomegranateImage3 from '@/assets/Pomegranate-3.jpg';
+import premiumDatesCategoryImage from '@/assets/Premium-Dates.jpg';
+import freshFruitsCategoryImage from '@/assets/Fresh-Fruits.jpg';
+import foodProductsCategoryImage from '@/assets/Food-Products.jpg';
+import freshVegetablesCategoryImage from '@/assets/Fresh-Vegetables.jpg';
+import freshCitrusCategoryImage from '@/assets/Fresh-Citrus.jpg';
 import datesImage4 from '@/assets/product-dates-4.jpeg';
 import datesImage5 from '@/assets/product-dates-5.jpeg';
 import datesImage6 from '@/assets/product-dates-6.jpeg';
@@ -101,7 +136,7 @@ interface ProductCategory {
 const ProductsSection = () => {
   const { t, isRTL } = useLanguage();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState<ProductCategory | null>(null);
+  const [selectedCategoryId, setSelectedCategoryId] = useState<string | null>(null);
 
   const productsList: Product[] = [
     {
@@ -303,7 +338,7 @@ const ProductsSection = () => {
       category: 'olives',
     },
     {
-      image: tomatoesImage,
+      image: tomatoesImage2,
       images: [tomatoesImage, tomatoesImage1, tomatoesImage2 ,tomatoesImage3 ,tomatoesImage4, tomatoesImage5], // Add 3 images here
       title: t('products.tomatoes.title'),
       description: t('products.tomatoes.desc'),
@@ -325,7 +360,7 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: onionImage1,
+      image: onionImage2,
       images: [onionImage1, onionImage2, onionImage3], // basal 2 images
       title: t('products.onion.title'),
       description: t('products.onion.desc'),
@@ -380,8 +415,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage3,
-      images: [tomatoesImage3, tomatoesImage4, tomatoesImage5],
+      image: peasImage1,
+      images: [peasImage1, peasImage1],//jalbana 2 images
       title: t('products.peas.title'),
       description: t('products.peas.desc'),
       fullDescription: t('products.peas.fullDesc'),
@@ -391,8 +426,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage4,
-      images: [tomatoesImage4, tomatoesImage5, tomatoesImage],
+      image: greenBeansImage1,
+      images: [greenBeansImage1, greenBeansImage2],
       title: t('products.greenBeans.title'),
       description: t('products.greenBeans.desc'),
       fullDescription: t('products.greenBeans.fullDesc'),
@@ -402,8 +437,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage5,
-      images: [tomatoesImage5, tomatoesImage4, tomatoesImage3],
+      image: favaBeansImage2,
+      images: [favaBeansImage1, favaBeansImage2], /// foul 2 images
       title: t('products.favaBeans.title'),
       description: t('products.favaBeans.desc'),
       fullDescription: t('products.favaBeans.fullDesc'),
@@ -413,8 +448,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage1,
-      images: [tomatoesImage1, tomatoesImage2, tomatoesImage],
+      image: cucumberImage1,
+      images: [cucumberImage1, cucumberImage2], // khiyar 2 images
       title: t('products.cucumber.title'),
       description: t('products.cucumber.desc'),
       fullDescription: t('products.cucumber.fullDesc'),
@@ -424,8 +459,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage2,
-      images: [tomatoesImage2, tomatoesImage1, tomatoesImage3],
+      image: zucchiniImage1,
+      images: [zucchiniImage1, zucchiniImage2, zucchiniImage3], // kousa 3 images
       title: t('products.zucchini.title'),
       description: t('products.zucchini.desc'),
       fullDescription: t('products.zucchini.fullDesc'),
@@ -435,8 +470,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage3,
-      images: [tomatoesImage3, tomatoesImage2, tomatoesImage4],
+      image: pumpkinImage2,
+      images: [pumpkinImage1, pumpkinImage2], // yareet 2 images
       title: t('products.pumpkin.title'),
       description: t('products.pumpkin.desc'),
       fullDescription: t('products.pumpkin.fullDesc'),
@@ -446,8 +481,8 @@ const ProductsSection = () => {
       category: 'vegetables',
     },
     {
-      image: tomatoesImage4,
-      images: [tomatoesImage4, tomatoesImage5, tomatoesImage],
+      image: artichokeImage1,
+      images: [artichokeImage1, artichokeImage2], // artichoke 2 images
       title: t('products.artichoke.title'),
       description: t('products.artichoke.desc'),
       fullDescription: t('products.artichoke.fullDesc'),
@@ -468,8 +503,8 @@ const ProductsSection = () => {
       category: 'fruits',
     },
     {
-      image: figsImage2,
-      images: [figsImage2, figsImage1, citrusImage2],
+      image: grapesImage1,
+      images: [grapesImage1, grapesImage2, grapesImage3, grapesImage4],//3nab 4 images
       title: t('products.grapes.title'),
       description: t('products.grapes.desc'),
       fullDescription: t('products.grapes.fullDesc'),
@@ -479,8 +514,8 @@ const ProductsSection = () => {
       category: 'fruits',
     },
     {
-      image: citrusImage3,
-      images: [citrusImage3, citrusImage4, citrusImage5],
+      image: watermelonImage1,
+      images: [watermelonImage1, watermelonImage2], //dala3 2 images
       title: t('products.watermelon.title'),
       description: t('products.watermelon.desc'),
       fullDescription: t('products.watermelon.fullDesc'),
@@ -490,8 +525,8 @@ const ProductsSection = () => {
       category: 'fruits',
     },
     {
-      image: figsImage,
-      images: [figsImage, figsImage1, citrusImage6],
+      image: peachImage1,
+      images: [peachImage1, peachImage2, peachImage3, peachImage4], //khokh 4 images
       title: t('products.peach.title'),
       description: t('products.peach.desc'),
       fullDescription: t('products.peach.fullDesc'),
@@ -501,8 +536,8 @@ const ProductsSection = () => {
       category: 'fruits',
     },
     {
-      image: citrusImage7,
-      images: [citrusImage7, figsImage2, citrusImage1],
+      image: strawberryImage1,
+      images: [strawberryImage1, strawberryImage2, strawberryImage3],//fraise 3 images
       title: t('products.strawberry.title'),
       description: t('products.strawberry.desc'),
       fullDescription: t('products.strawberry.fullDesc'),
@@ -512,8 +547,8 @@ const ProductsSection = () => {
       category: 'fruits',
     },
     {
-      image: citrusImage5,
-      images: [citrusImage5, figsImage1, citrusImage2],
+      image: pomegranateImage1,
+      images: [pomegranateImage1, pomegranateImage2, pomegranateImage3],//rumman 3 images
       title: t('products.pomegranate.title'),
       description: t('products.pomegranate.desc'),
       fullDescription: t('products.pomegranate.fullDesc'),
@@ -536,12 +571,14 @@ const ProductsSection = () => {
       id: 'dates',
       name: t('category.dates'),
       description: t('category.dates.desc'),
+      image: premiumDatesCategoryImage,
       products: productsList.filter(p => p.category === 'dates'),
     },
     {
       id: 'citrus',
       name: t('category.citrus'),
       description: t('category.citrus.desc'),
+      image: freshCitrusCategoryImage,
       products: productsList.filter(p => p.category === 'citrus'),
     },
     {
@@ -554,21 +591,28 @@ const ProductsSection = () => {
       id: 'food',
       name: t('category.food'),
       description: t('category.food.desc'),
+      image: foodProductsCategoryImage,
       products: productsList.filter(p => p.category === 'food'),
     },
     {
       id: 'vegetables',
       name: t('category.vegetables'),
       description: t('category.vegetables.desc'),
+      image: freshVegetablesCategoryImage,
       products: productsList.filter(p => p.category === 'vegetables'),
     },
     {
       id: 'fruits',
       name: t('category.fruits'),
       description: t('category.fruits.desc'),
+      image: freshFruitsCategoryImage,
       products: productsList.filter(p => p.category === 'fruits'),
     }
   ];
+
+  const selectedCategory = selectedCategoryId
+    ? categories.find(category => category.id === selectedCategoryId) || null
+    : null;
 
   return (
     <>
@@ -591,10 +635,10 @@ const ProductsSection = () => {
           {selectedCategory && (
             <FadeIn className="mb-8">
               <button
-                onClick={() => setSelectedCategory(null)}
+                onClick={() => setSelectedCategoryId(null)}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
               >
-                ← Back to Categories
+                {isRTL ? '→' : '←'} {t('products.backToCategories')}
               </button>
             </FadeIn>
           )}
@@ -605,7 +649,7 @@ const ProductsSection = () => {
               {categories.filter(c => c.products.length > 0).map((category) => (
                 <StaggerItem key={category.id}>
                   <div
-                    onClick={() => setSelectedCategory(category)}
+                    onClick={() => setSelectedCategoryId(category.id)}
                     className="group relative overflow-hidden rounded-xl md:rounded-2xl bg-card shadow-card hover:shadow-elegant transition-all duration-500 cursor-pointer h-full"
                   >
                     {/* Category Image (use first product image) */}
@@ -632,7 +676,7 @@ const ProductsSection = () => {
                         {category.description}
                       </p>
                       <span className="hidden md:inline-block text-accent text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300">
-                        {category.products.length} products →
+                        {category.products.length} {t('products.itemsLabel')} →
                       </span>
                     </div>
 
@@ -679,8 +723,8 @@ const ProductsSection = () => {
                         {product.description}
                       </p>
                       <div className="text-secondary-foreground/70 text-xs md:text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300 space-y-1 mb-3">
-                        <div><span className="font-semibold">Origin:</span> {product.origin}</div>
-                        <div><span className="font-semibold">Packaging:</span> {product.packaging}</div>
+                        <div><span className="font-semibold">{t('products.modal.origin')}:</span> {product.origin}</div>
+                        <div><span className="font-semibold">{t('products.modal.packaging')}:</span> {product.packaging}</div>
                       </div>
                       <span className="hidden md:inline-block text-accent text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300">
                         {t('products.clickDetails')} →
