@@ -301,7 +301,7 @@ const translations = {
     'products.vegetablesMixC.packaging': 'Crates, cartons, or custom packs',
     'products.vegetablesMixC.availability': 'Seasonal and year-round by item',
 
-    'products.artichoke.title': 'Artichoke (Cardoon Type)',
+    'products.artichoke.title': 'Artichoke ',
     'products.artichoke.desc': 'Fresh artichoke for export markets',
     'products.artichoke.fullDesc': 'Premium artichoke, including regional cardoon/artichoke types, prepared for international distribution.',
     'products.artichoke.origin': 'North Africa',
