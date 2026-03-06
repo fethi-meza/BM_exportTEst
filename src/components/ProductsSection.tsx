@@ -23,16 +23,30 @@ import dateCoffeeImage1 from '@/assets/Date-Coffee-1.jpg';
 import stuffedDatesWithNutsImage1 from '@/assets/Stuffed-Dates-withNuts-1.jpg';
 import stuffedDatesWithNutsImage2 from '@/assets/Stuffed-Dates-withNuts-2.jpg';
 import stuffedDatesWithNutsImage3 from '@/assets/Stuffed-Dates-withNuts-3.jpg';
-import juicesImage1 from '@/assets/Juices-1.jpg';
-import juicesImage2 from '@/assets/Juices-2.jpg';
-import juicesImage3 from '@/assets/Juices-3.jpg';
-import sweetsAndPastriesImage1 from '@/assets/Sweets-and-pastries-1.jpg';
-import sweetsAndPastriesImage2 from '@/assets/Sweets-and-pastries-2.jpg';
-import chocolateImage1 from '@/assets/Chocolate-1.jpg';
-import chocolateImage2 from '@/assets/Chocolate-2.jpg';
-import chocolateImage3 from '@/assets/Chocolate-3.jpg';
-import bakingImage1 from '@/assets/Baking-1.jpg';
-import bakingImage2 from '@/assets/Baking-2.jpg';
+import juicesImage1 from '@/assets/Juices-1.jpeg';
+import juicesImage2 from '@/assets/Juices-2.jpeg';
+import juicesImage3 from '@/assets/Juices-3.jpeg';
+
+import SodajuicesImage1 from '@/assets/soda-Juices-1.jpeg';
+import SodajuicesImage2 from '@/assets/soda-Juices-2.jpeg';
+
+import waterImage1 from '@/assets/water-1.jpg';
+
+
+
+import sweetsAndPastriesImage1 from '@/assets/Sweets-and-pastries-1.jpeg';
+import sweetsAndPastriesImage2 from '@/assets/Sweets-and-pastries-2.jpeg';
+import chocolateImage1 from '@/assets/Chocolate-1.jpeg';
+import chocolateImage2 from '@/assets/Chocolate-2.jpeg';
+import chocolateImage3 from '@/assets/Chocolate-3.jpeg';
+import bakingImage1 from '@/assets/Baking-1.jpeg';
+import bakingImage2 from '@/assets/Baking-2.jpeg';
+import bakingImage3 from '@/assets/Baking-3.jpeg';
+
+import BiscuitsImage1 from '@/assets/Biscuits-1.jpeg';
+import BiscuitsImage2 from '@/assets/Biscuits-2.jpeg';
+
+
 import potatoImage1 from '@/assets/Potato-1.jpg';
 import potatoImage2 from '@/assets/Potato-2.jpg';
 import onionImage1 from '@/assets/Onion-1.jpg';
@@ -40,12 +54,11 @@ import onionImage2 from '@/assets/Onion-2.jpeg';
 import onionImage3 from '@/assets/Onion-3.jpg';
 import broccoliImage1 from '@/assets/Broccoli-1.jpg';
 import broccoliImage2 from '@/assets/Broccoli-2.jpg';
-import carrotImage1 from '@/assets/Carrot-1.JPG';
+import carrotImage1 from '@/assets/Carrot-1.jpg';
 import carrotImage2 from '@/assets/Carrot-2.jpg';
 import cauliflowerImage1 from '@/assets/Cauliflower-1.jpg';
 import cauliflowerImage2 from '@/assets/Cauliflower-2.jpg';
 import eggplantImage1 from '@/assets/Eggplant-1.jpeg';
-import eggplantImage2 from '@/assets/Eggplant-2.jpg';
 import peasImage1 from '@/assets/Peas-1.jpg';
 import greenBeansImage1 from '@/assets/Green-Beans-1.jpg';
 import greenBeansImage2 from '@/assets/Green-Beans-2.jpg';
@@ -60,21 +73,21 @@ import pumpkinImage1 from '@/assets/Pumpkin-1.jpg';
 import pumpkinImage2 from '@/assets/Pumpkin-2.jpg';
 import artichokeImage1 from '@/assets/Artichoke-1.jpg';
 import artichokeImage2 from '@/assets/Artichoke-2.jpg';
-import grapesImage1 from '@/assets/Grapes-1.jpg';
-import grapesImage2 from '@/assets/Grapes-2.jpg';
-import grapesImage3 from '@/assets/Grapes-3.jpg';
+import grapesImage1 from '@/assets/Grapes-1.jpeg';
+import grapesImage2 from '@/assets/Grapes-2.jpeg';
+import grapesImage3 from '@/assets/Grapes-3.jpeg';
 import grapesImage4 from '@/assets/Grapes-4.jpg';
 import watermelonImage1 from '@/assets/Watermelon-1.jpg';
 import watermelonImage2 from '@/assets/Watermelon-2.jpg';
 import peachImage1 from '@/assets/Peach-1.jpg';
 import peachImage2 from '@/assets/Peach-2.jpg';
-import peachImage3 from '@/assets/Peach-3.jpg';
-import peachImage4 from '@/assets/Peach-4.jpg';
+import peachImage3 from '@/assets/Peach-3.jpeg';
+import peachImage4 from '@/assets/Peach-4.jpeg';
 import strawberryImage1 from '@/assets/Strawberry-1.jpg';
 import strawberryImage2 from '@/assets/Strawberry-2.jpg';
 import strawberryImage3 from '@/assets/Strawberry-3.jpg';
-import pomegranateImage1 from '@/assets/Pomegranate-1.jpg';
-import pomegranateImage2 from '@/assets/Pomegranate-2.jpg';
+import pomegranateImage1 from '@/assets/Pomegranate-1.jpeg';
+import pomegranateImage2 from '@/assets/Pomegranate-2.jpeg';
 import pomegranateImage3 from '@/assets/Pomegranate-3.jpg';
 import premiumDatesCategoryImage from '@/assets/Premium-Dates.jpg';
 import freshFruitsCategoryImage from '@/assets/Fresh-Fruits.jpg';
@@ -93,8 +106,6 @@ import citrusImage6 from '@/assets/product-citrus-6.jpeg';
 import citrusImage7 from '@/assets/product-citrus-7.jpeg';
 import grainsImage from '@/assets/product-grains.jpg';
 import oliveOilImage from '@/assets/product-olive-oil.jpg';
-import oliveOilImage1 from '@/assets/product-olive-oil-1.jpg';
-import oliveOilImage2 from '@/assets/product-olive-oil-2.jpg';
 import oliveOilImage3 from '@/assets/Oil-1.jpg';
 import oliveOilImage4 from '@/assets/Oil-3.jpg';
 import greenOlivesImage1 from '@/assets/greenOlivesImage1.jpg';
@@ -106,9 +117,8 @@ import tomatoesImage2 from '@/assets/product-tomatoes-2.jpg';
 import tomatoesImage3 from '@/assets/product-tomatoes-3.jpeg';
 import tomatoesImage4 from '@/assets/product-tomatoes-4.jpeg';
 import tomatoesImage5 from '@/assets/product-tomatoes-5.jpeg';
-import figsImage from '@/assets/product-figs.jpg';
+import figsImage from '@/assets/product-figs.jpeg';
 import figsImage1 from '@/assets/product-figs-1.jpg';
-import figsImage2 from '@/assets/product-figs-2.jpg';
 import ProductModal from './ProductModal';
 
 interface Product {
@@ -237,8 +247,8 @@ const ProductsSection = () => {
       category: 'dates',
     },
     {
-      image: citrusImage,
-      images: [citrusImage, citrusImage1, citrusImage2, citrusImage3, citrusImage4, citrusImage5, citrusImage6, citrusImage7], // Add 8 images here
+      image: citrusImage2,
+      images: [ citrusImage1, citrusImage2, citrusImage3, citrusImage4, citrusImage5, citrusImage6, citrusImage7], // Add 8 images here
       title: t('products.citrus.title'),
       description: t('products.citrus.desc'),
       fullDescription: t('products.citrus.fullDesc'),
@@ -248,30 +258,8 @@ const ProductsSection = () => {
       category: 'fruits',
     },
     {
-      image: juicesImage1,
-      images: [juicesImage1, juicesImage2, juicesImage3], // jus slim 3 images
-      title: t('products.foodJuices.title'),
-      description: t('products.foodJuices.desc'),
-      fullDescription: t('products.foodJuices.fullDesc'),
-      origin: t('products.foodJuices.origin'),
-      packaging: t('products.foodJuices.packaging'),
-      availability: t('products.foodJuices.availability'),
-      category: 'food',
-    },
-    {
-      image: sweetsAndPastriesImage1,
-      images: [sweetsAndPastriesImage1, sweetsAndPastriesImage2], // halawiyat wa maamoul 2 images
-      title: t('products.foodSweets.title'),
-      description: t('products.foodSweets.desc'),
-      fullDescription: t('products.foodSweets.fullDesc'),
-      origin: t('products.foodSweets.origin'),
-      packaging: t('products.foodSweets.packaging'),
-      availability: t('products.foodSweets.availability'),
-      category: 'food',
-    },
-    {
       image: chocolateImage1,
-      images: [chocolateImage1, chocolateImage2, chocolateImage3], // chokola 3 images
+      images: [chocolateImage1, chocolateImage2, chocolateImage3],
       title: t('products.foodChocolate.title'),
       description: t('products.foodChocolate.desc'),
       fullDescription: t('products.foodChocolate.fullDesc'),
@@ -281,8 +269,30 @@ const ProductsSection = () => {
       category: 'food',
     },
     {
+      image: sweetsAndPastriesImage1,
+      images: [sweetsAndPastriesImage1, sweetsAndPastriesImage2],
+      title: t('products.foodSweets.title'),
+      description: t('products.foodSweets.desc'),
+      fullDescription: t('products.foodSweets.fullDesc'),
+      origin: t('products.foodSweets.origin'),
+      packaging: t('products.foodSweets.packaging'),
+      availability: t('products.foodSweets.availability'),
+      category: 'food',
+    },
+    {
+      image: BiscuitsImage1,
+      images: [BiscuitsImage1, BiscuitsImage2],
+      title: t('products.foodBiscuits.title'),
+      description: t('products.foodBiscuits.desc'),
+      fullDescription: t('products.foodBiscuits.fullDesc'),
+      origin: t('products.foodBiscuits.origin'),
+      packaging: t('products.foodBiscuits.packaging'),
+      availability: t('products.foodBiscuits.availability'),
+      category: 'food',
+    },
+    {
       image: bakingImage1,
-      images: [bakingImage1, bakingImage2],// maida wa khobz 2 images
+      images: [bakingImage1, bakingImage2 ,bakingImage3],
       title: t('products.foodBaking.title'),
       description: t('products.foodBaking.desc'),
       fullDescription: t('products.foodBaking.fullDesc'),
@@ -292,8 +302,41 @@ const ProductsSection = () => {
       category: 'food',
     },
     {
-      image: oliveOilImage4,
-      images: [oliveOilImage4, oliveOilImage, oliveOilImage1, oliveOilImage2, oliveOilImage3],
+      image: SodajuicesImage1,
+      images: [  SodajuicesImage1, SodajuicesImage2  ],
+      title: t('products.foodSoftDrinks.title'),
+      description: t('products.foodSoftDrinks.desc'),
+      fullDescription: t('products.foodSoftDrinks.fullDesc'),
+      origin: t('products.foodSoftDrinks.origin'),
+      packaging: t('products.foodSoftDrinks.packaging'),
+      availability: t('products.foodSoftDrinks.availability'),
+      category: 'food',
+    },
+    {
+      image: juicesImage1,
+      images: [juicesImage1, juicesImage2, juicesImage3],
+      title: t('products.foodJuices.title'),
+      description: t('products.foodJuices.desc'),
+      fullDescription: t('products.foodJuices.fullDesc'),
+      origin: t('products.foodJuices.origin'),
+      packaging: t('products.foodJuices.packaging'),
+      availability: t('products.foodJuices.availability'),
+      category: 'food',
+    },
+    {
+      image: waterImage1,
+      images: [waterImage1],
+      title: t('products.foodWater.title'),
+      description: t('products.foodWater.desc'),
+      fullDescription: t('products.foodWater.fullDesc'),
+      origin: t('products.foodWater.origin'),
+      packaging: t('products.foodWater.packaging'),
+      availability: t('products.foodWater.availability'),
+      category: 'food',
+    },
+    {
+      image: oliveOilImage,
+      images: [ oliveOilImage, oliveOilImage3],
       title: t('products.oliveOil.title'),
       description: t('products.oliveOil.desc'),
       fullDescription: t('products.oliveOil.fullDesc'),
@@ -480,7 +523,7 @@ const ProductsSection = () => {
     },
     {
       image: figsImage,
-      images: [figsImage, figsImage1, figsImage2], // Add 3 images here
+      images: [figsImage, figsImage1],
       title: t('products.figs.title'),
       description: t('products.figs.desc'),
       fullDescription: t('products.figs.fullDesc'),
@@ -512,7 +555,7 @@ const ProductsSection = () => {
       category: 'fruits',
     },
     {
-      image: peachImage1,
+      image: peachImage3,
       images: [peachImage1, peachImage2, peachImage3, peachImage4], //khokh 4 images
       title: t('products.peach.title'),
       description: t('products.peach.desc'),
