@@ -54,7 +54,7 @@ import onionImage2 from '@/assets/Onion-2.jpeg';
 import onionImage3 from '@/assets/Onion-3.jpg';
 import broccoliImage1 from '@/assets/Broccoli-1.jpg';
 import broccoliImage2 from '@/assets/Broccoli-2.jpg';
-import carrotImage1 from '@/assets/Carrot-1.jpg';
+import carrotImage1 from '@/assets/Carrot-1.JPG';
 import carrotImage2 from '@/assets/Carrot-2.jpg';
 import cauliflowerImage1 from '@/assets/Cauliflower-1.jpg';
 import cauliflowerImage2 from '@/assets/Cauliflower-2.jpg';
