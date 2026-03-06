@@ -80,7 +80,6 @@ import premiumDatesCategoryImage from '@/assets/Premium-Dates.jpg';
 import freshFruitsCategoryImage from '@/assets/Fresh-Fruits.jpg';
 import foodProductsCategoryImage from '@/assets/Food-Products.jpg';
 import freshVegetablesCategoryImage from '@/assets/Fresh-Vegetables.jpg';
-import freshCitrusCategoryImage from '@/assets/Fresh-Citrus.jpg';
 import datesImage4 from '@/assets/product-dates-4.jpeg';
 import datesImage5 from '@/assets/product-dates-5.jpeg';
 import datesImage6 from '@/assets/product-dates-6.jpeg';
@@ -93,7 +92,6 @@ import citrusImage5 from '@/assets/product-citrus-5.jpeg';
 import citrusImage6 from '@/assets/product-citrus-6.jpeg';
 import citrusImage7 from '@/assets/product-citrus-7.jpeg';
 import grainsImage from '@/assets/product-grains.jpg';
-import almondsImage from '@/assets/product-almonds.jpg';
 import oliveOilImage from '@/assets/product-olive-oil.jpg';
 import oliveOilImage1 from '@/assets/product-olive-oil-1.jpg';
 import oliveOilImage2 from '@/assets/product-olive-oil-2.jpg';
@@ -247,7 +245,7 @@ const ProductsSection = () => {
       origin: t('products.citrus.origin'),
       packaging: t('products.citrus.packaging'),
       availability: t('products.citrus.availability'),
-      category: 'citrus',
+      category: 'fruits',
     },
     {
       image: juicesImage1,
@@ -292,17 +290,6 @@ const ProductsSection = () => {
       packaging: t('products.foodBaking.packaging'),
       availability: t('products.foodBaking.availability'),
       category: 'food',
-    },
-    {
-      image: almondsImage,
-      images: [almondsImage, almondsImage, almondsImage], // Add 3 images here
-      title: t('products.almonds.title'),
-      description: t('products.almonds.desc'),
-      fullDescription: t('products.almonds.fullDesc'),
-      origin: t('products.almonds.origin'),
-      packaging: t('products.almonds.packaging'),
-      availability: t('products.almonds.availability'),
-      category: 'nuts',
     },
     {
       image: oliveOilImage4,
@@ -573,19 +560,6 @@ const ProductsSection = () => {
       description: t('category.dates.desc'),
       image: premiumDatesCategoryImage,
       products: productsList.filter(p => p.category === 'dates'),
-    },
-    {
-      id: 'citrus',
-      name: t('category.citrus'),
-      description: t('category.citrus.desc'),
-      image: freshCitrusCategoryImage,
-      products: productsList.filter(p => p.category === 'citrus'),
-    },
-    {
-      id: 'nuts',
-      name: t('category.nuts'),
-      description: t('category.nuts.desc'),
-      products: productsList.filter(p => p.category === 'nuts'),
     },
     {
       id: 'food',
