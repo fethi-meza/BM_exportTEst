@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Send, MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -51,7 +52,13 @@ const ContactSection = () => {
     return `https://wa.me/${normalizedNumber}?text=${message}`;
   };
 
-  const contactInfo = [
+  type ContactInfoItem = {
+    icon: LucideIcon;
+    label: string;
+    type?: 'phone';
+  };
+
+  const contactInfo: ContactInfoItem[] = [
     {
       icon: MapPin,
       label: t('contact.info.address'),
