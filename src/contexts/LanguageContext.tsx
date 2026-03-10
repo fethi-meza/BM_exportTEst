@@ -1239,7 +1239,7 @@ const translations = {
     
     'products.tomatoes.title': 'طماطم طازجة',
     'products.tomatoes.desc': 'جودة تصدير ناضجة على الكرمة',
-    'products.tomatoes.fullDesc': 'طماطم فاخرة ناضجة على الكرمة مزروعة في ظروف مثالية. متوفرة بأنواع مختلفة منها الكرزية والروما وقلب الثور.',
+    'products.tomatoes.fullDesc': 'طماطم فاخرة ناضجة على الكرمة مزروعة في ظروف مثالية. متوفرة بأنواع مختلفة ',
     'products.tomatoes.origin': 'شمال الجزائر',
     'products.tomatoes.packaging': 'صناديق مهواة، كراتين ',
     'products.tomatoes.availability': 'على مدار السنة مع موسم الذروة (مايو-أكتوبر)',

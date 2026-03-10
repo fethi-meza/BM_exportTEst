@@ -26,6 +26,9 @@ import stuffedDatesWithNutsImage3 from '@/assets/Stuffed-Dates-withNuts-3.jpg';
 import juicesImage1 from '@/assets/Juices-1.jpeg';
 import juicesImage2 from '@/assets/Juices-2.jpeg';
 import juicesImage3 from '@/assets/Juices-3.jpeg';
+import juicesImage4 from '@/assets/Juices-4.jpeg';
+
+
 
 import SodajuicesImage1 from '@/assets/soda-Juices-1.jpeg';
 import SodajuicesImage2 from '@/assets/soda-Juices-2.jpeg';
@@ -36,16 +39,19 @@ import waterImage1 from '@/assets/water-1.jpg';
 
 import sweetsAndPastriesImage1 from '@/assets/Sweets-and-pastries-1.jpeg';
 import sweetsAndPastriesImage2 from '@/assets/Sweets-and-pastries-2.jpeg';
+import sweetsAndPastriesImage3 from '@/assets/Sweets-and-pastries-3.jpeg';
 import chocolateImage1 from '@/assets/Chocolate-1.jpeg';
 import chocolateImage2 from '@/assets/Chocolate-2.jpeg';
 import chocolateImage3 from '@/assets/Chocolate-3.jpeg';
+import chocolateImage4 from '@/assets/Chocolate-4.jpeg';
 import bakingImage1 from '@/assets/Baking-1.jpeg';
 import bakingImage2 from '@/assets/Baking-2.jpeg';
 import bakingImage3 from '@/assets/Baking-3.jpeg';
 
 import BiscuitsImage1 from '@/assets/Biscuits-1.jpeg';
 import BiscuitsImage2 from '@/assets/Biscuits-2.jpeg';
-
+import BiscuitsImage3 from '@/assets/Biscuits-3.jpeg';
+import BiscuitsImage4 from '@/assets/Biscuits-4.jpeg';
 
 import potatoImage1 from '@/assets/Potato-1.jpg';
 import potatoImage2 from '@/assets/Potato-2.jpg';
@@ -54,7 +60,7 @@ import onionImage2 from '@/assets/Onion-2.jpeg';
 import onionImage3 from '@/assets/Onion-3.jpg';
 import broccoliImage1 from '@/assets/Broccoli-1.jpg';
 import broccoliImage2 from '@/assets/Broccoli-2.jpg';
-import carrotImage1 from '@/assets/Carrot-1.JPG';
+import carrotImage1 from '@/assets/Carrot-1.jpg';
 import carrotImage2 from '@/assets/Carrot-2.jpg';
 import cauliflowerImage1 from '@/assets/Cauliflower-1.jpg';
 import cauliflowerImage2 from '@/assets/Cauliflower-2.jpg';
@@ -258,8 +264,8 @@ const ProductsSection = () => {
       category: 'fruits',
     },
     {
-      image: chocolateImage1,
-      images: [chocolateImage1, chocolateImage2, chocolateImage3],
+      image: chocolateImage3,
+      images: [chocolateImage1, chocolateImage2, chocolateImage3 , chocolateImage4], // Add 4 images here
       title: t('products.foodChocolate.title'),
       description: t('products.foodChocolate.desc'),
       fullDescription: t('products.foodChocolate.fullDesc'),
@@ -269,8 +275,8 @@ const ProductsSection = () => {
       category: 'food',
     },
     {
-      image: sweetsAndPastriesImage1,
-      images: [sweetsAndPastriesImage1, sweetsAndPastriesImage2],
+      image: sweetsAndPastriesImage3,
+       images: [sweetsAndPastriesImage1,sweetsAndPastriesImage2, sweetsAndPastriesImage3], // Add 3 images here
       title: t('products.foodSweets.title'),
       description: t('products.foodSweets.desc'),
       fullDescription: t('products.foodSweets.fullDesc'),
@@ -281,7 +287,7 @@ const ProductsSection = () => {
     },
     {
       image: BiscuitsImage1,
-      images: [BiscuitsImage1, BiscuitsImage2],
+      images: [BiscuitsImage1, BiscuitsImage2 , BiscuitsImage3 , BiscuitsImage4], // Add 4 images here
       title: t('products.foodBiscuits.title'),
       description: t('products.foodBiscuits.desc'),
       fullDescription: t('products.foodBiscuits.fullDesc'),
@@ -313,8 +319,8 @@ const ProductsSection = () => {
       category: 'food',
     },
     {
-      image: juicesImage1,
-      images: [juicesImage1, juicesImage2, juicesImage3],
+      image: juicesImage4,
+      images: [juicesImage1, juicesImage2, juicesImage3 , juicesImage4], // Add 4 images here
       title: t('products.foodJuices.title'),
       description: t('products.foodJuices.desc'),
       fullDescription: t('products.foodJuices.fullDesc'),

@@ -19,8 +19,14 @@ const ContactSection = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Set WhatsApp number based on language
-  const WHATSAPP_NUMBER = language === 'ar' ? '+213559300417' : '+33773996582';
+  // Set WhatsApp number based on selected language
+  const WHATSAPP_NUMBER_BY_LANGUAGE: Record<string, string> = {
+    ar: '+213559300417',
+    fr: '+33773996582',
+    en: '+213562085902',
+  };
+
+  const WHATSAPP_NUMBER = WHATSAPP_NUMBER_BY_LANGUAGE[language] ?? '+33773996582';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,7 +46,9 @@ const ContactSection = () => {
 
   const getWhatsAppUrl = () => {
     const message = encodeURIComponent(t('whatsapp.message'));
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    // wa.me requires digits only (no + or spaces)
+    const normalizedNumber = WHATSAPP_NUMBER.replace(/\D/g, '');
+    return `https://wa.me/${normalizedNumber}?text=${message}`;
   };
 
   const contactInfo = [
