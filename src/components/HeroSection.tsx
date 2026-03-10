@@ -20,8 +20,15 @@ const HeroSection = () => {
   const { t, isRTL, language } = useLanguage();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Set WhatsApp number based on language
-  const WHATSAPP_NUMBER = language === 'ar' ? '+213559300417' : '+33773996582';
+  // Set WhatsApp number based on selected language
+  const WHATSAPP_NUMBER_BY_LANGUAGE: Record<'ar' | 'fr' | 'en', string> = {
+    ar: '+213559300417',
+    fr: '+33773996582',
+    en: '+213562085902',
+  };
+
+  const normalizedLanguage = language.toLowerCase().split('-')[0] as 'ar' | 'fr' | 'en';
+  const WHATSAPP_NUMBER = WHATSAPP_NUMBER_BY_LANGUAGE[normalizedLanguage] ?? '+213562085902';
 
   // Auto-scroll images every 2.5 seconds
   useEffect(() => {
@@ -36,7 +43,8 @@ const HeroSection = () => {
 
   const getWhatsAppUrl = () => {
     const message = encodeURIComponent(t('whatsapp.message'));
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    const normalizedNumber = WHATSAPP_NUMBER.replace(/\D/g, '');
+    return `https://wa.me/${normalizedNumber}?text=${message}`;
   };
 
   const scrollToContact = () => {

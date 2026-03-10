@@ -65,13 +65,21 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
 
   if (!isOpen || !product) return null;
 
-  // Set WhatsApp number based on language
-  const WHATSAPP_NUMBER = language === 'ar' ? '+2136580000823' : '+33773996582';
+  // Set WhatsApp number based on selected language
+  const WHATSAPP_NUMBER_BY_LANGUAGE: Record<'ar' | 'fr' | 'en', string> = {
+    ar: '+213559300417',
+    fr: '+33773996582',
+    en: '+213562085902',
+  };
+
+  const normalizedLanguage = language.toLowerCase().split('-')[0] as 'ar' | 'fr' | 'en';
+  const WHATSAPP_NUMBER = WHATSAPP_NUMBER_BY_LANGUAGE[normalizedLanguage] ?? '+213562085902';
 
   const whatsappMessage = encodeURIComponent(
     `${t('whatsapp.message')} - ${product.title}`
   );
-  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`;
+  const normalizedNumber = WHATSAPP_NUMBER.replace(/\D/g, '');
+  const whatsappLink = `https://wa.me/${normalizedNumber}?text=${whatsappMessage}`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center p-0 md:p-4">
