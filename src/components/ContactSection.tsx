@@ -21,13 +21,14 @@ const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Set WhatsApp number based on selected language
-  const WHATSAPP_NUMBER_BY_LANGUAGE: Record<string, string> = {
+  const WHATSAPP_NUMBER_BY_LANGUAGE: Record<'ar' | 'fr' | 'en', string> = {
     ar: '+213559300417',
     fr: '+33773996582',
     en: '+213562085902',
   };
 
-  const WHATSAPP_NUMBER = WHATSAPP_NUMBER_BY_LANGUAGE[language] ?? '+33773996582';
+  const normalizedLanguage = language.toLowerCase().split('-')[0] as 'ar' | 'fr' | 'en';
+  const WHATSAPP_NUMBER = WHATSAPP_NUMBER_BY_LANGUAGE[normalizedLanguage] ?? '+213562085902';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
