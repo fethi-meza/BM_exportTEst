@@ -35,6 +35,19 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
     setCurrentImageIndex(0);
   }, [isOpen, product]);
 
+  // Auto-slide product images every 1 second on open modal
+  useEffect(() => {
+    if (!isOpen || productImages.length <= 1) return;
+
+    const intervalId = window.setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === productImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 1000);
+
+    return () => window.clearInterval(intervalId);
+  }, [isOpen, productImages.length]);
+
   // Prevent body scroll when modal is open
   useEffect(() => {
     if (isOpen) {
