@@ -111,7 +111,7 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
 
         <div className="flex flex-col md:flex-row overflow-y-auto md:overflow-hidden h-full">
           {/* Image Carousel */}
-          <div className="md:w-1/2 flex-shrink-0 relative group h-48 md:h-[600px]">
+          <div className="md:w-1/2 flex-shrink-0 relative group h-[44vh] min-h-[300px] max-h-[460px] md:h-[600px] md:max-h-none">
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentImageIndex}
@@ -157,7 +157,7 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
           </div>
 
           {/* Content */}
-          <div className="md:w-1/2 p-4 md:p-8 overflow-y-auto flex-1">
+          <div className="md:w-1/2 p-3 md:p-8 overflow-y-auto flex-1">
             <h3 className="font-display text-xl md:text-3xl font-bold text-foreground mb-2 md:mb-3">
               {product.title}
             </h3>
