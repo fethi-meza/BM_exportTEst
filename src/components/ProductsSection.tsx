@@ -169,8 +169,8 @@ const ProductsSection = () => {
       category: 'olives',
     },
     {
-      image: degletNourDatesImage4,
-      images: [degletNourDatesImage1, degletNourDatesImage2, degletNourDatesImage3 , degletNourDatesImage4],// daglat nor dates 3 images
+      image: degletNourDatesImage3,
+      images: [degletNourDatesImage1, degletNourDatesImage2, degletNourDatesImage3 ],// daglat nor dates 3 images
       title: t('products.dates.title'),
       description: t('products.dates.desc'),
       fullDescription: t('products.dates.fullDesc'),

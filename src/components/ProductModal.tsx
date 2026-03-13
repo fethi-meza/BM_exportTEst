@@ -43,7 +43,7 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === productImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 1000);
+    }, 3000);
 
     return () => window.clearInterval(intervalId);
   }, [isOpen, productImages.length]);
