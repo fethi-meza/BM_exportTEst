@@ -10,16 +10,19 @@ import datesImage3 from '@/assets/product-dates-3.jpeg';
 import degletNourDatesImage1 from '@/assets/Deglet-Nour -Dates-1.jpg';
 import degletNourDatesImage2 from '@/assets/Deglet-Nour -Dates-2.jpg';
 import degletNourDatesImage3 from '@/assets/Deglet-Nour -Dates-3.jpg';
+import degletNourDatesImage4 from '@/assets/Deglet-Nour -Dates-4.jpeg';
 import gharsDatesImage1 from '@/assets/Ghars-Dates-1.jpg';
 import gharsDatesImage2 from '@/assets/Ghars-Dates-2.jpg';
 import dateSyrupImage1 from '@/assets/Date-Syrup-1.jpg';
-import dateSyrupImage2 from '@/assets/Date-Syrup-2.jpg';
+import dateSyrupImage3 from '@/assets/Date-Syrup-3.jpeg';
 import datePasteImage1 from '@/assets/Date-Paste-1.jpg';
 import dateSugarImage1 from '@/assets/Date-Sugar-1.jpg';
 import dateSugarImage2 from '@/assets/Date-Sugar-2.jpg';
+import dateSugarImage3 from '@/assets/Date-Sugar-3.jpeg';
 import dateVinegarImage1 from '@/assets/Date-Vinegar-1.jpg';
 import dateVinegarImage2 from '@/assets/Date-Vinegar-2.jpg';
 import dateCoffeeImage1 from '@/assets/Date-Coffee-1.jpg';
+import dateCoffeeImage2 from '@/assets/Date-Coffee-2.jpeg';
 import stuffedDatesWithNutsImage1 from '@/assets/Stuffed-Dates-withNuts-1.jpg';
 import stuffedDatesWithNutsImage2 from '@/assets/Stuffed-Dates-withNuts-2.jpg';
 import stuffedDatesWithNutsImage3 from '@/assets/Stuffed-Dates-withNuts-3.jpg';
@@ -114,8 +117,9 @@ import grainsImage from '@/assets/product-grains.jpg';
 import oliveOilImage from '@/assets/product-olive-oil.jpg';
 import oliveOilImage3 from '@/assets/Oil-1.jpg';
 import oliveOilImage4 from '@/assets/Oil-3.jpg';
-import greenOlivesImage1 from '@/assets/greenOlivesImage1.jpg';
-import greenOlivesImage2 from '@/assets/greenOlivesImage2.jpg';
+import greenOlivesImage1 from '@/assets/greenOlivesImage1.jpeg';
+import greenOlivesImage2 from '@/assets/greenOlivesImage2.jpeg';
+import greenOlivesImage3 from '@/assets/greenOlivesImage3.jpeg';
 import blackOlivesImage1 from '@/assets/blackOlivesImage1.jpg';
 import tomatoesImage from '@/assets/product-tomatoes.jpg';
 import tomatoesImage1 from '@/assets/product-tomatoes-1.jpg';
@@ -165,8 +169,8 @@ const ProductsSection = () => {
       category: 'olives',
     },
     {
-      image: degletNourDatesImage1,
-      images: [degletNourDatesImage1, degletNourDatesImage2, degletNourDatesImage3],// daglat nor dates 3 images
+      image: degletNourDatesImage4,
+      images: [degletNourDatesImage1, degletNourDatesImage2, degletNourDatesImage3 , degletNourDatesImage4],// daglat nor dates 3 images
       title: t('products.dates.title'),
       description: t('products.dates.desc'),
       fullDescription: t('products.dates.fullDesc'),
@@ -188,7 +192,7 @@ const ProductsSection = () => {
     },
     {
       image: dateSyrupImage1,
-      images: [dateSyrupImage1],// dbs tamr 2 images
+      images: [dateSyrupImage1, dateSyrupImage3],// dbs tamr 2 images
       title: t('products.dateSyrup.title'),
       description: t('products.dateSyrup.desc'),
       fullDescription: t('products.dateSyrup.fullDesc'),
@@ -210,7 +214,7 @@ const ProductsSection = () => {
     },
     {
       image: dateSugarImage1,
-      images: [dateSugarImage1, dateSugarImage2], // souker tamr 2 images
+       images: [dateSugarImage1, dateSugarImage2, dateSugarImage3], // souker tamr 3 images
       title: t('products.dateSugar.title'),
       description: t('products.dateSugar.desc'),
       fullDescription: t('products.dateSugar.fullDesc'),
@@ -232,7 +236,7 @@ const ProductsSection = () => {
     },
     {
       image: dateCoffeeImage1,
-      images: [dateCoffeeImage1], // qahwat tamr 1 image
+      images: [dateCoffeeImage1 ,dateCoffeeImage2], // qahwat tamr 1 image
       title: t('products.dateCoffee.title'),
       description: t('products.dateCoffee.desc'),
       fullDescription: t('products.dateCoffee.fullDesc'),
@@ -353,7 +357,7 @@ const ProductsSection = () => {
     },
     {
       image: greenOlivesImage1,
-      images: [greenOlivesImage1,greenOlivesImage2],//ziton akdar 
+       images: [greenOlivesImage1,greenOlivesImage2,greenOlivesImage3],//ziton akdar 
       title: t('products.greenOlivesPitted.title'),
       description: t('products.greenOlivesPitted.desc'),
       fullDescription: t('products.greenOlivesPitted.fullDesc'),
