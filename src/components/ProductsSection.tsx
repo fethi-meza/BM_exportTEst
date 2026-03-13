@@ -10,7 +10,7 @@ import datesImage3 from '@/assets/product-dates-3.jpeg';
 import degletNourDatesImage1 from '@/assets/Deglet-Nour -Dates-1.jpg';
 import degletNourDatesImage2 from '@/assets/Deglet-Nour -Dates-2.jpg';
 import degletNourDatesImage3 from '@/assets/Deglet-Nour -Dates-3.jpg';
-import degletNourDatesImage4 from '@/assets/Deglet-Nour -Dates-4.jpeg';
+
 import gharsDatesImage1 from '@/assets/Ghars-Dates-1.jpg';
 import gharsDatesImage2 from '@/assets/Ghars-Dates-2.jpg';
 import dateSyrupImage1 from '@/assets/Date-Syrup-1.jpg';
