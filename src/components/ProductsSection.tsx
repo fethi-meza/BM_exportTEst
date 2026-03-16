@@ -191,7 +191,7 @@ const ProductsSection = () => {
       category: 'dates',
     },
     {
-      image: dateSyrupImage1,
+      image: dateSyrupImage3,
       images: [dateSyrupImage1, dateSyrupImage3],// dbs tamr 2 images
       title: t('products.dateSyrup.title'),
       description: t('products.dateSyrup.desc'),
